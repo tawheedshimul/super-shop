@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiAllForOne } from 'react-icons/gi';
+import { NavLink } from 'react-router-dom';
 
 const FixedFooter = () => {
     return (
@@ -9,7 +10,9 @@ const FixedFooter = () => {
                     {/* <RiShirtLine className="text-2xl mr-2" /> */}
                     <GiAllForOne></GiAllForOne>
                 </button>
-                <button className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                <NavLink
+                    to='/mens'
+                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -24,8 +27,10 @@ const FixedFooter = () => {
                         <circle cx="12" cy="4" r="2" />
                         <path d="M5 20h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3.7L9.7 19.3a1 1 0 0 1-1.4 0L5 15.6V18a2 2 0 0 0 2 2z" />
                     </svg>
-                </button>
-                <button className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                </NavLink>
+                <NavLink
+                    to='/women'
+                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -40,7 +45,7 @@ const FixedFooter = () => {
                         <circle cx="12" cy="5" r="2" />
                         <path d="M12 22s-6-3-6-8V6s3-2 6-2 6 2 6 2v8c0 5-6 8-6 8z" />
                     </svg>
-                </button>
+                </NavLink>
                 <button className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

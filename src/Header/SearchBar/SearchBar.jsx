@@ -12,7 +12,7 @@ function SearchBar() {
                 <input
                     type="text"
                     placeholder="Search Products by Titles or Tag"
-                    className="peer h-10 w-full border border-slate-400 px-2 text-slate-900 placeholder-slate-400 transition-colors duration-300 focus:border-sky-400 focus:outline-none"
+                    className="h-10 w-full border border-slate-400 px-2 text-slate-900 placeholder-slate-400 transition-colors duration-300 focus:border-sky-400 focus:outline-none"
                 />
                 <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
                     <IoMdSearch />

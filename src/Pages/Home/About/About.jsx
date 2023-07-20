@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div className="container my-24 mx-auto">
       <section className="mb-32">
         <h2 className="mb-12 text-center text-3xl font-bold">
           Why is it so great?
