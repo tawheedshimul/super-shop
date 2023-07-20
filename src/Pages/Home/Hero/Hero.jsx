@@ -12,10 +12,10 @@ const HeroSection = () => {
             From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.
           </p>
           <div className="mt-6 flex ">
-            <a href="#" className="inline-block mt-3 px-6 py-4 text-lg font-medium text-center text-gray-800 border rounded-lg border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white ">
+            <a href="#" className="inline-block mt-3 px-6 py-4 text-lg font-medium text-center text-gray-800 border rounded-lg border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
               Get started
             </a>
-            <a href="#" className="mx-2 inline-block mt-3 px-6 py-4 text-lg font-medium text-center text-gray-800 border rounded-lg border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white ">
+            <a href="#" className="mx-2 inline-block mt-3 px-6 py-4 text-lg font-medium text-center text-gray-800 border rounded-lg border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
               Speak to Sales
             </a>
           </div>
