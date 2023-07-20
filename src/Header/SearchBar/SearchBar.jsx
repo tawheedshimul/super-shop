@@ -4,15 +4,15 @@ import { IoMdArrowDropdown, IoMdSearch } from 'react-icons/io';
 function SearchBar() {
     return (
         <div className="relative">
-            <div className='flex'>
-                <button className="text-black flex items-center bg-blue-300 px-2">
+            <div className='relative flex h-10 w-full overflow-clip'>
+                <button className="flex items-center border border-slate-400 bg-slate-50 px-2 text-sm text-slate-400 transition-colors duration-300">
                     <p className="mr-1">Products</p>
                     <IoMdArrowDropdown className="text-xl" />
                 </button>
                 <input
                     type="text"
                     placeholder="Search Products by Titles or Tag"
-                    className="bg-gray-200 text-black px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-300 focus:ring-1"
+                    className="peer h-10 w-full border border-slate-400 px-2 text-slate-900 placeholder-slate-400 transition-colors duration-300 focus:border-sky-400 focus:outline-none"
                 />
                 <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black">
                     <IoMdSearch />
