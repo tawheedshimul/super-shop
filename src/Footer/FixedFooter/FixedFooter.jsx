@@ -1,9 +1,9 @@
 import React from 'react';
 import { GiAllForOne } from 'react-icons/gi';
 
-const Footer = () => {
+const FixedFooter = () => {
     return (
-        <footer className="bg-gray-200 py-2">
+        <footer className="bg-gray-200 py-2 fixed bottom-0 left-0 right-0">
             <div className="container mx-auto flex justify-around">
                 <button className="flex items-center bg-blue-300 px-4 py-2 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300">
                     {/* <RiShirtLine className="text-2xl mr-2" /> */}
@@ -63,4 +63,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FixedFooter;

@@ -5,7 +5,7 @@ import { IoIosHome } from 'react-icons/io';
 
 const ShoppingNavbar = () => {
   return (
-    <nav className="bg-white p-4 shadow">
+    <nav className="bg-white p-4 shadow fixed top-0 left-0 right-0">
       <div className="flex items-center justify-between container mx-auto">
 
         {/* hemberger menu  */}

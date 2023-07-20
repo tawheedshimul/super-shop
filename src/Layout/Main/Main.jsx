@@ -1,16 +1,18 @@
 import React from 'react';
 import Navbar from '../../Header/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
-import FixedFooter from '../../Footer/FixedFooter/FixedFooter';
+import Footer from '../../Footer/Footer/Footer';
 
 const Main = () => {
     return (
         <div>
-            <div className='mb-20'>
+            <div className='mb-24'>
             <Navbar></Navbar>
             </div>
             <Outlet></Outlet>
-            <FixedFooter></FixedFooter>
+            <div className='mt-5'>
+            <Footer></Footer>
+            </div>
             
         </div>
     );
