@@ -11,7 +11,7 @@ const LatestArticles = () => {
             }
           `}
         </style>
-        <h2 className="mb-12 text-center text-3xl font-bold">Latest articles</h2>
+        <h2 className="mb-12 text-center text-3xl font-bold">Latest Product</h2>
 
         <div className="grid gap-6 lg:grid-cols-3">
           {/* Article 1 */}
