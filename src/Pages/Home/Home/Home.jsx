@@ -1,9 +1,15 @@
 import React from 'react'
 import Hero from '../Hero/Hero'
+import About from '../About/About'
+import Latest from '../Latest/Latest'
 
 function Home() {
   return (
-    <Hero></Hero>
+    <>
+      <Hero></Hero>
+      <Latest></Latest>
+      <About></About>
+    </>
   )
 }
 
