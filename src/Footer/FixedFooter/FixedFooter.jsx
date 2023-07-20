@@ -23,10 +23,6 @@ const Footer = () => {
           {/* <RiChildLine className="text-2xl mr-2" /> */}
           <span>Kids</span>
         </button>
-        <button className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
-          {/* <RiChildLine className="text-2xl mr-2" /> */}
-          <span>Cosmetics</span>
-        </button>
       </div>
     </footer>
   );
