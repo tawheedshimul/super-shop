@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Layout/Main/Main";
 import Mens from "../../Pages/Mens/Mens/Mens";
 import Contact from "../../Header/Contact/Contact";
+import Women from "../../Pages/Women/Women/Women";
 
 
 
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: '/mens',
         element: <Mens></Mens>
+      },
+      {
+        path: '/women',
+        element: <Women></Women>
       },
       {
         path: '/contact',
