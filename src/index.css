@@ -2,47 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
+@layer base{
+    html{
         scroll-behavior: smooth;
     }
 }
 
-/* index.css */
-
-/* Light mode colors (fallback) */
-:root {
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --heading-color: #007bff;
-}
-
-/* Dark mode colors (fallback) */
-[data-theme='dark'] {
-    --background-color: #222222;
-    --text-color: #f1f1f1;
-    --heading-color: #00bfff;
-}
-
-/* Common styles for both modes */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-h1 {
-    color: var(--heading-color);
-}
-
-/* Automatic switching based on device's color scheme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #222222;
-        --text-color: #f1f1f1;
-        --heading-color: #00bfff;
-    }
-}
-
-/* Add more styles as needed */
