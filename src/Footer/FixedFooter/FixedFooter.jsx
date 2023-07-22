@@ -8,14 +8,14 @@ const FixedFooter = () => {
             <div className="container mx-auto flex justify-around">
                 <NavLink
                     to='/all'
-                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                    className="flex items-center px-4 py-2 rounded-lg  focus:outline-none focus:ring focus:ring-gray-200">
 
                     {/* <RiShirtLine className="text-2xl mr-2" /> */}
                     <GiAllForOne></GiAllForOne>
                 </NavLink>
                 <NavLink
                     to='/mens'
-                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                    className="flex items-center px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -33,7 +33,7 @@ const FixedFooter = () => {
                 </NavLink>
                 <NavLink
                     to='/women'
-                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                    className="flex items-center px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -51,7 +51,7 @@ const FixedFooter = () => {
                 </NavLink>
                 <NavLink
                 to='/kids'
-                className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                className="flex items-center px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
