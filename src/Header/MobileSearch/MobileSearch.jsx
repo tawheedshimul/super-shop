@@ -1,8 +1,8 @@
 // MobileNav.js
 import React, { useState } from 'react';
-import SearchBar from '../../../Header/SearchBar/SearchBar';
+import SearchBar from '../SearchBar/SearchBar';
 
-const MobileNav = () => {
+const MobileSearch = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -64,4 +64,4 @@ const MobileNav = () => {
   );
 };
 
-export default MobileNav;
+export default MobileSearch;
