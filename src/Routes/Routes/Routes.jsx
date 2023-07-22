@@ -28,6 +28,14 @@ export const router = createBrowserRouter([
         element: <Women></Women>
       },
       {
+        path: '/all',
+        element: <Women></Women>
+      },
+      {
+        path: '/kids',
+        element: <Women></Women>
+      },
+      {
         path: '/contact',
         element: <Contact></Contact>
       },

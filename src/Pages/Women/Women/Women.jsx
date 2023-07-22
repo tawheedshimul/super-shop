@@ -1,67 +1,25 @@
-// MobileNav.js
-import React, { useState } from 'react';
-import SearchBar from '../../../Header/SearchBar/SearchBar';
+import React from 'react';
 
-const MobileNav = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
+const UnderMaintenance = () => {
   return (
-    <div className="md:hidden">
-      {/* Hamburger icon / Cross button */}
-      <div className="flex items-center justify-end px-4 py-2">
-        <button
-          onClick={toggleMenu}
-          className="text-gray-500 focus:outline-none focus:text-gray-600"
-        >
-          {isMenuOpen ? (
-            // Cross button when menu is open
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          ) : (
-            // Hamburger icon when menu is closed
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              width="25"
-              height="25"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-search"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-          )}
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      <div
-        className={`${isMenuOpen ? 'block' : 'hidden'
-          } md:hidden transition-opacity duration-300`}
-      >
-        <div className="bg-white divide-y divide-gray-100">
-          <SearchBar></SearchBar>
-        </div>
+    <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
+      <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="Logo" className="mb-8 h-40" />
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 mb-4">
+        Site is under maintenance
+      </h1>
+      <p className="text-center text-gray-500 text-lg md:text-xl lg:text-2xl mb-8">
+        We're working hard to improve the user experience. Stay tuned!
+      </p>
+      <div className="flex space-x-4">
+        <a href="#" className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded">
+          Contact Us
+        </a>
+        <a href="#" className="border-2 border-gray-800 text-black font-bold py-3 px-6 rounded">
+          Reload
+        </a>
       </div>
     </div>
   );
 };
 
-export default MobileNav;
+export default UnderMaintenance;

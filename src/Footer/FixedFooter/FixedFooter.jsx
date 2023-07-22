@@ -6,10 +6,13 @@ const FixedFooter = () => {
     return (
         <footer className="bg-gray-200 py-2 fixed bottom-0 left-0 right-0">
             <div className="container mx-auto flex justify-around">
-                <button className="flex items-center bg-blue-300 px-4 py-2 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300">
+                <NavLink
+                    to='/all'
+                    className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+
                     {/* <RiShirtLine className="text-2xl mr-2" /> */}
                     <GiAllForOne></GiAllForOne>
-                </button>
+                </NavLink>
                 <NavLink
                     to='/mens'
                     className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
@@ -46,7 +49,9 @@ const FixedFooter = () => {
                         <path d="M12 22s-6-3-6-8V6s3-2 6-2 6 2 6 2v8c0 5-6 8-6 8z" />
                     </svg>
                 </NavLink>
-                <button className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
+                <NavLink
+                to='/kids'
+                className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-200">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -62,7 +67,7 @@ const FixedFooter = () => {
                         <path d="M12 2s-5 1.95-5 6v5s2 3 5 3 5-3 5-3V8s-5-1.95-5-6z" />
                         <path d="M12 15a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3" />
                     </svg>
-                </button>
+                </NavLink>
             </div>
         </footer>
     );

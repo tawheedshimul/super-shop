@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
 import { IoIosHome } from 'react-icons/io';
 import Banner from '../Banner/Banner';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const ShoppingNavbar = () => {
@@ -18,20 +18,18 @@ const ShoppingNavbar = () => {
       <nav className="bg-gray-100 p-4 shadow fixed top-0 left-0 right-0 z-40">
         <div className="flex items-center justify-between container mx-auto">
 
-          <div className='flex items-center'>
+          <NavLink to='/' className='flex items-center rounded mr-1 bg-gray-300 hover:bg-cyan-400 hover:text-white'>
             {/* hemberger menu  */}
             <div className='flex items-center'>
-              <IoIosHome className='text-3xl text-gray-500'></IoIosHome>
+              <IoIosHome className='text-3xl'></IoIosHome>
               <div className="mx-2 h-10 border-r border-gray-500"></div>
             </div>
 
             {/* logos section  */}
-            <div className="mr-4 flex items-center">
-              <a href="/" className="text-black text-xl font-semibold hover:text-blue-300">
-                Super-Shop
-              </a>
+            <div className="mr-4 flex font-bold items-center">
+              Super-Shop
             </div>
-          </div>
+          </NavLink>
 
           {/* search section */}
           <div className='hidden sm:block flex-grow'>
