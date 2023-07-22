@@ -1,25 +1,61 @@
-import React from 'react';
+// src/App.js
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const UnderMaintenance = () => {
+const App = () => {
+  const [meals, setMeals] = useState([]);
+  const [page, setPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchMeals = async () => {
+    setIsLoading(true);
+    try {
+      const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=&p=${page}`);
+      if (response.data.meals) {
+        setMeals((prevMeals) => [...prevMeals, ...response.data.meals]);
+        setPage((prevPage) => prevPage + 1);
+      }
+    } catch (error) {
+      console.error('Error fetching meals:', error);
+    }
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    fetchMeals();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop ===
+      document.documentElement.offsetHeight
+    ) {
+      fetchMeals();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
-      <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="Logo" className="mb-8 h-40" />
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 mb-4">
-        Site is under maintenance
-      </h1>
-      <p className="text-center text-gray-500 text-lg md:text-xl lg:text-2xl mb-8">
-        We're working hard to improve the user experience. Stay tuned!
-      </p>
-      <div className="flex space-x-4">
-        <a href="#" className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded">
-          Contact Us
-        </a>
-        <a href="#" className="border-2 border-gray-800 text-black font-bold py-3 px-6 rounded">
-          Reload
-        </a>
+    <div className="bg-gray-200 min-h-screen p-8">
+      <h1 className="text-4xl font-bold mb-8">MealDB React App</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {meals.map((meal) => (
+          <div key={meal.idMeal} className="bg-white p-4 shadow-md rounded">
+            <img src={meal.strMealThumb} alt={meal.strMeal} className="w-full h-32 object-cover" />
+            <h2 className="text-xl font-bold mt-4">{meal.strMeal}</h2>
+          </div>
+        ))}
+        {isLoading && <p className="text-center col-span-full">Loading...</p>}
       </div>
     </div>
   );
 };
 
-export default UnderMaintenance;
+export default App;
