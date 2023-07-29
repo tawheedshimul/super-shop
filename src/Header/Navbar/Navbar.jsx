@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
 import { IoIosHome } from 'react-icons/io';
-import Banner from '../Banner/Banner';
+// import Banner from '../Banner/Banner';
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -16,28 +16,23 @@ const ShoppingNavbar = () => {
     <>
       <nav className="bg-gray-100 p-4 shadow fixed top-0 left-0 right-0 z-40">
         <div className="flex items-center justify-between container mx-auto">
-
-          <NavLink to='/' className='flex items-center rounded mr-1 bg-gray-300 hover:bg-cyan-400 hover:text-white'>
-            {/* hemberger menu  */}
-            <div className='flex items-center'>
-              <IoIosHome className='text-3xl'></IoIosHome>
-              <div className="mx-2 h-10 border-r border-gray-500"></div>
-            </div>
-
-            {/* logos section  */}
-            <div className="mr-4 flex font-bold items-center">
-              Super-Shop
-            </div>
-          </NavLink>
-
-          {/* search section */}
-          <div className='hidden sm:block flex-grow'>
-            <SearchBar></SearchBar>
+          {/* Home icon section  */}
+          <div className='flex itmes-center flex-grow'>
+            <NavLink to='/' className='flex items-center rounded mr-1 bg-gray-300 hover:bg-cyan-400 hover:text-white'>
+              <IoIosHome className='text-3xl'/>
+              <span className="mx-2 h-10 border-r border-gray-500"></span>
+              <span className="mr-4 flex font-bold items-center">
+                Super-Shop
+              </span>
+            </NavLink>
+            {/* search section */}
+            <span className=' hidden md:block sm:hidden flex-grow'>
+              <SearchBar></SearchBar>
+            </span>
           </div>
 
+
           <div className='flex items-center'>
-
-
             {/* mobile search  */}
             <button
               onClick={toggleMenu}
