@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const App = () => {
+const Women = () => {
   const [meals, setMeals] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
@@ -58,4 +58,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Women;
