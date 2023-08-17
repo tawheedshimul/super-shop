@@ -6,6 +6,7 @@ import Mens from "../../Pages/Mens/Mens/Mens";
 import Contact from "../../Header/Contact/Contact";
 import Women from "../../Pages/Women/Women/Women";
 import ShoppingCart from "../../Pages/Cart/Cart";
+import LoginForm from "../../Registration/LogInForm/R/Login";
 
 
 
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/login',
+        element: <LoginForm></LoginForm>
       },
     ]
   }
