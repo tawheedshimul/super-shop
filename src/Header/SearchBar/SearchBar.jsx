@@ -3,7 +3,7 @@ import './SearchBar.css'
 
 function SearchBar() {
     return (
-        <div className="relative mt-1">
+        <div className="relative">
             <div className='relative flex h-10 w-full overflow-clip'>
                 <select name="product-names" id="product-names" className="flex items-center border border-slate-400 bg-slate-50 px-2 text-sm text-black transition-colors duration-300">
                     <option value="all">All</option>

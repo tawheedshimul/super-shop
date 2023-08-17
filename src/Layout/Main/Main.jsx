@@ -10,7 +10,7 @@ const Main = () => {
             <Navbar></Navbar>
             </div>
             <Outlet></Outlet>
-            <div className='mt-12'>
+            <div className='mt-16'>
             <Footer></Footer>
             </div>
             
