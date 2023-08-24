@@ -5,7 +5,7 @@ function SearchBar() {
     return (
         <div className="relative">
             <div className='relative flex h-10 w-full overflow-clip'>
-                <select name="product-names" id="product-names" className="flex items-center border border-slate-400 bg-slate-50 px-2 text-sm text-black transition-colors duration-300">
+                <select name="product-names" id="product-names" className="flex items-center border border-slate-400 bg-slate-50 px-2 text-sm text-black transition-colors duration-300 outline-0 hover:border hover:border-cyan-400">
                     <option value="all">All</option>
                     <option value="men">Men</option>
                     <option value="women">Women</option>

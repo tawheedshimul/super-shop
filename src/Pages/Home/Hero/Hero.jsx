@@ -21,7 +21,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <img className="object-contain w-full h-auto md:max-w-full md:h-auto lg:max-w-none" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
+          <img className="object-contain w-full h-auto md:max-w-full md:h-auto lg:max-w-none" src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhlcyUyMHNob3B8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="mockup" />
         </div>
       </div>
     </section>
