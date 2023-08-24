@@ -1,8 +1,9 @@
 import React from 'react';
+import Quantity from './Quantity';
 
 function ShoppingCart() {
     return (
-        <div className="container mx-auto mt-4 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto mt-20 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row shadow-md my-10">
                 <div className="lg:w-3/4 bg-white px-4 lg:px-10 py-4 lg:py-10">
                     <div className="flex justify-between border-b pb-4 lg:pb-8">
@@ -28,7 +29,7 @@ function ShoppingCart() {
                             </div>
                         </div>
                         <div className="flex justify-center w-1/5">
-                            {/* Quantity buttons */}
+                            <Quantity></Quantity>
                         </div>
                         <span className="text-center w-1/5 font-semibold text-sm">$400.00</span>
                         <span className="text-center w-1/5 font-semibold text-sm">$400.00</span>
@@ -60,7 +61,7 @@ function ShoppingCart() {
                     </div>
                     <div className="py-10">
                         <label htmlFor="promo" className="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
-                        <input type="text" id="promo" placeholder="Enter your code" className="p-2 text-sm w-full" />
+                        <input type="text" id="promo" placeholder="Enter your code" className="p-2 text-sm w-full border-b-2 outline-0 border-indigo-500" />
                     </div>
                     <button className="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
                     <div className="border-t mt-8">
