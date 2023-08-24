@@ -2,7 +2,7 @@ import React from 'react';
 
 function ShoppingCart() {
     return (
-        <div className="container mx-auto mt-24">
+        <div className="container mx-auto mt-4 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row shadow-md my-10">
                 <div className="lg:w-3/4 bg-white px-4 lg:px-10 py-4 lg:py-10">
                     <div className="flex justify-between border-b pb-4 lg:pb-8">
