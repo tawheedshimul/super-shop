@@ -13,26 +13,26 @@ const FixedFooter = () => {
                     to='/all'
                     className="flex items-center px-4 py-2 rounded-lg  focus:outline-none focus:ring focus:ring-gray-200">
                     {/* <img className='h-8' src={All} alt="allproduct" /> */}
-                    <p className='font-semibold hover:text-cyan-800'>ALL</p>
+                    <p className='font-semibold '>ALL</p>
 
                 </NavLink>
                 <NavLink
                     to='/mens'
                     className="flex items-center px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     {/* <img className='h-8' src={Mens} alt="Mens" /> */}
-                    <p className='font-semibold hover:text-cyan-800'>MEN</p>
+                    <p className='font-semibold '>MEN</p>
                 </NavLink>
                 <NavLink
                     to='/women'
                     className="flex items-center  px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     {/* <img className='h-8' src={Women} alt="Women"/> */}
-                    <p className='font-semibold hover:text-cyan-800'>WOMEN</p>
+                    <p className='font-semibold'>WOMEN</p>
                 </NavLink>
                 <NavLink
                     to='/kids'
                     className="flex items-center px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-gray-200">
                     {/* <img className='h-8' src={Kids} alt="kids" srcset="" /> */}
-                    <p className='font-semibold hover:text-cyan-800'>KIDS</p>
+                    <p className='font-semibold'>KIDS</p>
                 </NavLink>
             </div>
         </footer>
