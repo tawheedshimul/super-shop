@@ -7,18 +7,12 @@ function ShoppingCart() {
             <div className="flex flex-col lg:flex-row shadow-md my-10">
                 <div className="lg:w-3/4 bg-white px-4 lg:px-10 py-4 lg:py-10">
                     <div className="flex justify-between rounded lg:pb-4 bg-cyan-400 p-4">
-                        <h1 className="font-semibold text-2xl text-white">You Like</h1>
+                        <h1 className="font-semibold text-xl text-white my-auto">You Like</h1>
                         <h2 className="font-semibold text-2xl text-white"><span className='text-cyan-400 bg-white rounded-full px-1'>03</span> Items</h2>
-                    </div>
-                    <div className="flex mt-5 mb-2 pb-2 border-b">
-                        <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
-                        <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
-                        <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
-                        <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
                     </div>
                     {/* Product 1 */}
 
-                    <div className='border border-gray-300 rounded p-1'>
+                    <div className='border border-gray-300 rounded p-1 mt-3'>
                         <Product></Product>
                     </div>
                     {/* Continue Shopping */}
@@ -27,8 +21,8 @@ function ShoppingCart() {
                     </a>
                 </div>
                 <div id="summary" className="lg:w-1/4 px-4 lg:px-8 py-4 lg:py-10">
-                    <h1 className="font-semibold bg-cyan-400 text-white rounded py-2 text-2xl">Order Summary</h1>
-                    <hr className='mt-4' />
+                    <h1 className="font-semibold bg-cyan-400 text-white rounded py-2 text-2xl"><span className='ms-2'>Order Summary</span></h1>
+                    <hr className='mt-7' />
                     <div className="flex justify-between mt-4 mb-5">
                         <span className="font-semibold text-sm uppercase">Items 3</span>
                         <span className="font-semibold text-sm">590$</span>

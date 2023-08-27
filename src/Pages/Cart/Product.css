@@ -1,0 +1,48 @@
+/* Checkbox container style */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hide the actual checkbox */
+  .checkbox-container input {
+    display: none;
+  }
+  
+  /* Round checkmark style */
+  .checkmark {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #888282;
+    /* margin-right: 10px; */
+    position: relative;
+  }
+  
+  /* Custom checklog and checker icons */
+  .checklog,
+  .checker {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* Checker icon */
+  .checker {
+    background-color: #3eaf7c;
+  }
+  
+  /* Checklog icon */
+  /* .checklog {
+    background-color: #f44336;
+  } */
+  
