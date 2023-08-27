@@ -15,6 +15,9 @@ function ShoppingCart() {
                     <div className='border border-gray-300 rounded p-1 mt-3'>
                         <Product></Product>
                     </div>
+                    <div className='border border-gray-300 rounded p-1 mt-3'>
+                        <Product></Product>
+                    </div>
                     {/* Continue Shopping */}
                     <a href="#" className="flex font-semibold text-cyan-600 text-sm mt-10">
                         {/* ... */}Continue Shoping

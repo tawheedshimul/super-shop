@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactBanner() {
     return (
-        <div className='grid md:grid-cols-2 bg-gray-600 p-6 md:p-10 gap-6 md:gap-10 rounded-lg shadow-lg'>
+        <div className='grid md:grid-cols-2 bg-gray-600 p-6 md:p-10 gap-6 md:gap-10 shadow-lg'>
             {/* Left Column */}
             <div className='flex flex-col justify-center space-y-4'>
                 <div className='flex items-center space-x-2 mx-auto'>
@@ -13,7 +13,7 @@ function ContactBanner() {
 
                     <p className='font-semibold text-yellow-300 text-sm md:text-base'>GET SPECIAL DISCOUNTS TEXT</p>
                 </div>
-                <div className='md:flex md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2'>
+                <div className='md:flex md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2 mx-auto'>
                     <div className="flex items-center border-b border-teal-500 md:w-auto md:mr-3">
                         <input className="appearance-none bg-transparent border-none w-full text-white md:w-48 mr-3 px-3 py-2 leading-tight focus:outline-none text-xs md:text-sm placeholder-gray-400" type="text" placeholder="Enter your email" aria-label="Email"></input>
                     </div>
