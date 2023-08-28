@@ -8,6 +8,7 @@ import Women from "../../Pages/Women/Women/Women";
 import ShoppingCart from "../../Pages/Cart/Cart";
 import LoginForm from "../../Registration/LogInForm/R/Login";
 import All from "../../Pages/All/All/All";
+import ProductFolder from "../../Pages/Women/Women/ProductFolder/ProductFolder";
 
 
 
@@ -40,7 +41,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/kids',
-        element: <Women></Women>
+        element: <Women></Women>,
       },
       {
         path: '/contact',
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: '/login',
         element: <LoginForm></LoginForm>
+      },
+      {
+        path: "/file/:fileId?",
+        element: <ProductFolder></ProductFolder>
       },
     ]
   }
