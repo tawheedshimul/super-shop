@@ -23,7 +23,7 @@ function File() {
         <div className="md:w-1/3 flex flex-col items-center space-y-3 mt-28 mx-auto">
             <div className='flex justify-center'>
                 <button
-                    className="w-8 mt-1 h-8 text-white bg-cyan-500 rounded-full hover:bg-cyan-700 transition duration-300 transform hover:scale-105 mr-5"
+                    className="w-8 mt-1 h-8 text-white bg-cyan-500 rounded-full hover:bg-cyan-700 transition duration-300 transform  mr-5"
                     onClick={prevFile}
                 >
                     &lt;
@@ -33,7 +33,7 @@ function File() {
                         <Link
                             key={index}
                             alt={file.name}
-                            className={`rounded bg-gray-400 p-2 mx-5 cursor-pointer transition duration-300 transform ${index === currentFileIndex ? 'scale-105' : ''
+                            className={`rounded bg-gray-400 p-2 mx-3 cursor-pointer transition duration-300 transform ${index === currentFileIndex ? 'scale-105' : ''
                                 }`}
                             onClick={() => setCurrentFileIndex(index)}
                             to={`/file/${file.id}`}>{file.name}
@@ -41,7 +41,7 @@ function File() {
                     ))}
                 </div>
                 <button
-                    className="w-8 mt-1 h-8 text-white bg-cyan-500 rounded-full hover:bg-cyan-700 transition duration-300 transform hover:scale-105"
+                    className="w-8 mt-1 h-8 text-white bg-cyan-500 rounded-full hover:bg-cyan-700 transition duration-300 transform "
                     onClick={nextFile}
                 >
                     &gt;
