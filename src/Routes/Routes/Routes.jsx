@@ -7,6 +7,7 @@ import Contact from "../../Header/Contact/Contact";
 import Women from "../../Pages/Women/Women/Women";
 import ShoppingCart from "../../Pages/Cart/Cart";
 import LoginForm from "../../Registration/LogInForm/R/Login";
+import All from "../../Pages/All/All/All";
 
 
 
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/all',
-        element: <Women></Women>
+        element: <All></All>
       },
       {
         path: '/kids',
