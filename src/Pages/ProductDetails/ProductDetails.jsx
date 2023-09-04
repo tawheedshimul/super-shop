@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import DressSizeChart from './DressSizeChart/DressSizeChart';
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get the product ID from the URL parameter
@@ -53,7 +54,7 @@ const ProductDetails = () => {
         <p className="text-blue-500 font-semibold text-xl my-2">In Stock: {stock}</p>
         <p className="text-purple-600 font-semibold text-xl my-2">Brand: {brand}</p>
         <p className="text-indigo-500 font-semibold text-xl my-2">Category: {category}</p>
-        <div className='flex'> 
+        <div className='flex'>
           <input className='bg-cyan-400 px-4 rounded-l py-2 font-bold cursor-pointer hover:bg-cyan-500 grow my-2' type="button" value="Buy Now" />
           <input className='bg-gray-400 px-4 py-2 rounded-r font-bold cursor-pointer hover:bg-gray-500 grow ms-2 my-2' type="button" value="Add Cart" />
         </div>
@@ -61,6 +62,7 @@ const ProductDetails = () => {
         <div className="border-t border-b py-2 border-gray-200">
           <p className="text-base leading-4 text-gray-800">{description}</p>
         </div>
+        <DressSizeChart></DressSizeChart>
       </div>
     </div>
   );
