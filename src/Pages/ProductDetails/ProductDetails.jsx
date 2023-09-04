@@ -30,7 +30,7 @@ const ProductDetails = () => {
         <img
           src={images[currentImageIndex]}
           alt={title}
-          className="w-full h-auto "
+          className="w-full h-auto rounded "
         />
         <div className="flex mt-2">
           {images.map((image, index) => (
@@ -46,14 +46,17 @@ const ProductDetails = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 p-2">
-        <h2 className="text-2xl text-white bg-cyan-400 p-2 font-semibold">{title}</h2>
-        <p className="text-green-600 font-semibold text-xl my-2">Price: ${price}</p>
+        <h2 className="text-2xl text-white bg-cyan-400 rounded p-2 font-semibold">{title}</h2>
+        <p className="bg-gray-100 text-xl">Price: ৳ {price}</p>
         <p className="text-orange-500 font-semibold text-xl my-2">Discount: {discountPercentage}%</p>
         <p className="text-yellow-400 font-semibold text-xl my-2">Rating: {rating}</p>
         <p className="text-blue-500 font-semibold text-xl my-2">In Stock: {stock}</p>
         <p className="text-purple-600 font-semibold text-xl my-2">Brand: {brand}</p>
         <p className="text-indigo-500 font-semibold text-xl my-2">Category: {category}</p>
-        <input className='bg-gray-400 px-4 py-2 font-bold cursor-pointer my-2' type="button" value="Add Cart" />
+        <div className='flex'> 
+          <input className='bg-cyan-400 px-4 rounded-l py-2 font-bold cursor-pointer hover:bg-cyan-500 grow my-2' type="button" value="Buy Now" />
+          <input className='bg-gray-400 px-4 py-2 rounded-r font-bold cursor-pointer hover:bg-gray-500 grow ms-2 my-2' type="button" value="Add Cart" />
+        </div>
         <hr className='my-2' />
         <div className="border-t border-b py-2 border-gray-200">
           <p className="text-base leading-4 text-gray-800">{description}</p>
