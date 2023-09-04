@@ -9,6 +9,7 @@ import ShoppingCart from "../../Pages/Cart/Cart";
 import LoginForm from "../../Registration/LogInForm/R/Login";
 import All from "../../Pages/All/All/All";
 import ProductFolder from "../../Pages/Women/Women/ProductFolder/ProductFolder";
+import ProductDetails from "../../Pages/ProductDetails/ProductDetails";
 
 
 
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path: "/file/:fileId?",
         element: <ProductFolder></ProductFolder>
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetails></ProductDetails>
       },
     ]
   }

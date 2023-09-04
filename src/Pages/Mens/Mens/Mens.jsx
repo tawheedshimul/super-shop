@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../Header/Header';
 import ProductSlider from '../ProductSlider/ProductSlider';
+import ProductItems from '../ProductItme/ProductItems';
 
 const UnderMaintenance = () => {
   return (
     <div>
-      <Header></Header>
+      <ProductItems></ProductItems>
+      {/* <Header></Header> */}
       {/* <ProductSlider></ProductSlider> */}
     </div>
   );
