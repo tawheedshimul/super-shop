@@ -15,8 +15,8 @@ const ProductList = () => {
     return (
         <div className="product-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 justify-center container mx-auto mt-24">
             {products.map((product) => (
-                <Link to={`/product/${product.id}`} key={product.id} className="m-4">
-                    <div className="max-w-xs bg-white rounded-lg shadow-md  w-44">
+                <Link to={`/product/${product.id}`} key={product.id} className="m-2">
+                    <div className="max-w-xs bg-white rounded-lg shadow-md  w-38">
                         <img
                             src={product.thumbnail}
                             alt={product.title}
