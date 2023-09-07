@@ -15,7 +15,7 @@ const ShoppingNavbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-100 dark:bg-gray-700 dark:text-white p-3 shadow fixed top-0 left-0 right-0 z-40">
+      <nav className="bg-gray-100 p-3 shadow fixed top-0 left-0 right-0 z-40">
         <div className="flex items-center justify-between mx-auto">
           {/* Home icon section  */}
           <div className='flex itmes-center flex-grow'>
@@ -24,8 +24,8 @@ const ShoppingNavbar = () => {
               {/* <IoIosHome className='text-3xl'/> */}
               <OffCanvas></OffCanvas>
               <span className="mx-2 h-10 border-r border-gray-200"></span>
-              <Link to='/' className="mr-4 flex font-bold items-center text-2xl text-black">
-                Super-Shop
+              <Link to='/' className="mr-4 flex font-bold items-center text-2xl border-b border-gray-300 shadow text-black">
+                BeneBonik
               </Link>
             </div>
             {/* search section */}
@@ -53,7 +53,7 @@ const ShoppingNavbar = () => {
 
             {/* cart section  */}
             <div className="relative ml-4 p-1 px-2 rounded-full hover:bg-gray-300">
-              <Link to='/cart' className="text-black hover:text-blue-300">
+              <Link to='/cart'>
                 <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25"><path d="M286.788-81Q257-81 236-102.212q-21-21.213-21-51Q215-183 236.212-204q21.213-21 51-21Q317-225 338-203.788q21 21.213 21 51Q359-123 337.788-102q-21.213 21-51 21Zm400 0Q657-81 636-102.212q-21-21.213-21-51Q615-183 636.212-204q21.213-21 51-21Q717-225 738-203.788q21 21.213 21 51Q759-123 737.788-102q-21.213 21-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841-759 829-738L694-495q-11 19-28.559 30.5Q647.881-453 627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" /></svg>
               </Link>
               <span className="bg-red-500 text-white absolute -top-1 -right-1 text-xs w-4 h-4 flex items-center justify-center rounded-full">
