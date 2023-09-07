@@ -15,7 +15,7 @@ function OffCanvas() {
         <div>
             <button
                 type="button"
-                className="inline-flex text-3xl mt-1 ms-2 justify-center items-center gap-2 rounded-l border border-transparent font-semibold focus:outline-none"
+                className="inline-flex text-3xl mt-1 ms-2 justify-center items-center gap-2 rounded-l border border-transparent font-semibold focus:outline-none bg-gray-300 p-2"
                 onClick={toggleOverlay}
                 data-hs-overlay="#hs-overlay-example"
             >
@@ -53,7 +53,7 @@ function OffCanvas() {
                         </svg>
                     </button>
                 </div>
-                <div className=" max-h-[calc(100vh-80px)] overflow-y-auto">
+                <div className="max-h-[calc(100vh-80px)] overflow-y-auto">
                     <div className="text-gray-800 dark:text-gray-400">
                         <Accordion></Accordion>
                     </div>
