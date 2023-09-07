@@ -10,6 +10,7 @@ import LoginForm from "../../Registration/LogInForm/R/Login";
 import All from "../../Pages/All/All/All";
 import ProductFolder from "../../Pages/Women/Women/ProductFolder/ProductFolder";
 import ProductDetails from "../../Pages/ProductDetails/ProductDetails";
+import SignUpForm from "../../Registration/SIgnUpForm/SignUpForm";
 
 
 
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
       {
         path: '/login',
         element: <LoginForm></LoginForm>
+      },
+      {
+        path: '/signup',
+        element: <SignUpForm></SignUpForm>
       },
       {
         path: "/file/:fileId?",

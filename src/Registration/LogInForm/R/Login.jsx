@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
     return (
@@ -58,9 +59,9 @@ const LoginForm = () => {
                                         <circle cx="8.5" cy="7" r="4" />
                                         <path d="M20 8v6M23 11h-6" />
                                     </svg>
-                                    <span className="ml-3">
+                                    <Link to='/signup' className="ml-3">
                                         Create New Account
-                                    </span>
+                                    </Link>
                                 </button>
 
                             </div>
