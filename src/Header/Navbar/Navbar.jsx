@@ -3,6 +3,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import { IoIosHome } from 'react-icons/io';
 // import Banner from '../Banner/Banner';
 import { Link, NavLink } from 'react-router-dom';
+import OffCanvas from '../OffCanvas/OffCanvas';
 
 
 const ShoppingNavbar = () => {
@@ -15,16 +16,18 @@ const ShoppingNavbar = () => {
   return (
     <>
       <nav className="bg-gray-100 p-4 shadow fixed top-0 left-0 right-0 z-40">
-        <div className="flex items-center justify-between container mx-auto">
+        <div className="flex items-center justify-between mx-auto">
           {/* Home icon section  */}
           <div className='flex itmes-center flex-grow'>
-            <NavLink to='/' className='flex items-center rounded mr-1 h-10 bg-gray-300 hover:bg-cyan-400 hover:text-white'>
-              <IoIosHome className='text-3xl'/>
-              <span className="mx-2 h-10 border-r border-gray-500"></span>
-              <span className="mr-4 flex font-bold items-center">
+            
+            <div className='flex items-center rounded mr-1 h-10 bg-cyan-400 '>
+              {/* <IoIosHome className='text-3xl'/> */}
+              <OffCanvas></OffCanvas>
+              <span className="mx-2 h-10 border-r border-gray-200"></span>
+              <Link to='/' className="mr-4 flex font-bold items-center text-white">
                 Super-Shop
-              </span>
-            </NavLink>
+              </Link>
+            </div>
             {/* search section */}
             <span className=' hidden md:block sm:hidden flex-grow'>
               <SearchBar></SearchBar>

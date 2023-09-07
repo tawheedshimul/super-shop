@@ -48,12 +48,19 @@ const ProductDetails = () => {
       </div>
       <div className="w-full md:w-1/2 p-2">
         <h2 className="text-2xl text-white bg-cyan-400 rounded p-2 font-semibold">{title}</h2>
-        <p className="bg-gray-100 text-xl">Price: ৳ {price}</p>
-        <p className="text-orange-500 font-semibold text-xl my-2">Discount: {discountPercentage}%</p>
-        <p className="text-yellow-400 font-semibold text-xl my-2">Rating: {rating}</p>
-        <p className="text-blue-500 font-semibold text-xl my-2">In Stock: {stock}</p>
-        <p className="text-purple-600 font-semibold text-xl my-2">Brand: {brand}</p>
-        <p className="text-indigo-500 font-semibold text-xl my-2">Category: {category}</p>
+        <p className="border-b border-cyan-500 bg-cyan-100 p-2">Price: ৳ <span className='text-white font-bold bg-red-500 rounded px-10 p-1'>{price}</span></p>
+        <div className='flex justify-between border-b border-cyan-500 bg-cyan-100 p-2'>
+          <p>Size</p>
+          <select name="" id="" className="flex items-center border border-slate-400 bg-slate-50 px-2 text-sm text-black transition-colors duration-300 outline-0 hover:border hover:border-cyan-400">
+            <option value="xs">Premium XS</option>
+            <option value="s">Premium S</option>
+            <option value="m">Premium M</option>
+            <option value="l">Premium L</option>
+            <option value="xl">Premium XL</option>
+            <option value="xxl">Premium XXL</option>
+          </select>
+        </div>
+
         <div className='flex'>
           <input className='bg-cyan-400 px-4 rounded-l py-2 font-bold cursor-pointer hover:bg-cyan-500 grow my-2' type="button" value="Buy Now" />
           <input className='bg-gray-400 px-4 py-2 rounded-r font-bold cursor-pointer hover:bg-gray-500 grow ms-2 my-2' type="button" value="Add Cart" />
