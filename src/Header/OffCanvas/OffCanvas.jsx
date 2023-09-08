@@ -24,12 +24,12 @@ function OffCanvas() {
 
             <div
                 id="hs-overlay-example"
-                className={`fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full z-[60] bg-white border-r dark:bg-gray-800 dark:border-gray-700 ${overlayClass}`}
+                className={`fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full z-[60] bg-white border-r  ${overlayClass}`}
                 tabIndex="-1"
             >
-                <div className="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
-                    <h3 className="font-bold text-gray-800 dark:text-white">
-                        Super-Shop
+                <div className="flex justify-between items-center py-3 px-4 border-b ">
+                    <h3 className="font-bold text-gray-800 border-b text-xl">
+                        BeneBonik
                     </h3>
                     <button
                         type="button"
@@ -54,7 +54,7 @@ function OffCanvas() {
                     </button>
                 </div>
                 <div className="max-h-[calc(100vh-80px)] overflow-y-auto">
-                    <div className="text-gray-800 dark:text-gray-400">
+                    <div className="text-gray-800 ">
                         <Accordion></Accordion>
                     </div>
                 </div>

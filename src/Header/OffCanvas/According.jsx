@@ -42,7 +42,7 @@ const Accordion = () => {
             <span className="text font-semibold">{section.title}</span>
             <svg
               className={`w-6 h-6 transition-transform transform ${
-                activeIndexes.includes(index) ? 'rotate-180' : 'rotate-0'
+                activeIndexes.includes(index) ? 'rotate-(-180)' : 'rotate-0'
               }`}
               fill="none"
               stroke="currentColor"
