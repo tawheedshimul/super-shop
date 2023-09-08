@@ -18,25 +18,3 @@
     box-shadow: rgba(27, 31, 35, 0.1) 0px 1px 0px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
     transition-duration: 0.1s;
 }
-
-/* Default light mode styles */
-:root {
-    --background: #fff;
-    --text-color: #333;
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #333;
-        --text-color: #fff;
-    }
-}
-
-/* Apply the variables to your elements */
-body {
-    background-color: var(--background);
-    color: var(--text-color);
-}
-
-/* Add other styles as needed */
