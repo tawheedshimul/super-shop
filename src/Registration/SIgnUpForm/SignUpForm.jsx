@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
-function RegistrationForm() {
+function SignUpForm() {
+    const { createUser } = useContext(AuthContext);
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -9,21 +12,28 @@ function RegistrationForm() {
         confirmPassword: '',
     });
 
+    const [error, setError] = useState('');
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (formData.password !== formData.confirmPassword) {
-            alert("Passwords don't match. Please retype your password.");
+            setError("Passwords don't match. Please retype your password.");
             return;
         }
 
-        // Handle form submission here (e.g., send data to the server)
-        console.log('Form data submitted:', formData);
+        try {
+            await createUser(formData.email, formData.password);
+            console.log('User registered successfully!');
+            // Redirect to a different page upon successful registration
+        } catch (error) {
+            setError('Error registering user: ' + error.message);
+        }
     };
 
     return (
@@ -127,6 +137,7 @@ function RegistrationForm() {
                         </button>
                     </div>
                 </form>
+                {error && <div className="text-red-500">{error}</div>}
                 <p>Or</p>
                 <div>Registration With Google</div>
             </div>
@@ -134,4 +145,4 @@ function RegistrationForm() {
     );
 }
 
-export default RegistrationForm;
+export default SignUpForm;
