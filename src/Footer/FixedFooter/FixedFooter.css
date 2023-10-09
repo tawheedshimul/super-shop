@@ -1,6 +1,5 @@
 .scrollx{
-    width: 100vh;
-    height: 20px;
+    height: 30px;
     overflow-x: scroll;
     scroll-behavior: smooth;
   }
