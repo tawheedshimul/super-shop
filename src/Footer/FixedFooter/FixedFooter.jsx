@@ -4,7 +4,7 @@ import "./FixedFooter.css"
 
 const FixedFooter = () => {
     return (
-        <footer className="bg-gray-200 py-2 fixed bottom-0 left-0 right-0 z-40">
+        <footer className="block sm:hidden bg-gray-200 py-2 fixed bottom-0 left-0 right-0 z-40">
             <div className="container mx-auto flex justify-around">
                 <NavLink
                     to='/all'

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoIosMenu } from 'react-icons/io';
 import Accordion from './According';
+import { Link } from 'react-router-dom/dist';
 
 function OffCanvas() {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
@@ -55,7 +56,25 @@ function OffCanvas() {
                 </div>
                 <div className="max-h-[calc(100vh-80px)] overflow-y-auto">
                     <div className="text-gray-800 ">
-                        <Accordion></Accordion>
+                        <Link
+                            to='/all'
+                            className="flex justify-between items-center w-full p-4 border-b border-gray-200 hover:bg-gray-200 focus:outline-none">
+                            {/* <img className='h-8' src={All} alt="allproduct" /> */}
+                            <p className='font-semibold '>ALL</p>
+                        </Link>
+                        <Link
+                            to='/Mens'
+                            className="flex justify-between items-center w-full p-4 border-b border-gray-200 hover:bg-gray-200 focus:outline-none">
+                            {/* <img className='h-8' src={All} alt="allproduct" /> */}
+                            <p className='font-semibold '>MENS</p>
+                        </Link>
+                        <Link
+                            to='/women'
+                            className="flex justify-between items-center w-full p-4 border-b border-gray-200 hover:bg-gray-200 focus:outline-none">
+                            {/* <img className='h-8' src={All} alt="allproduct" /> */}
+                            <p className='font-semibold '>WOMEN</p>
+                        </Link>
+                        {/* <Accordion></Accordion> */}
                     </div>
                 </div>
             </div>
